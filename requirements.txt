@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 absl-py==0.12.0
 astunparse==1.6.3
 cached-property==1.5.2
@@ -40,3 +41,13 @@ urllib3==1.26.3
 Werkzeug==1.0.1
 wrapt==1.12.1
 zipp==3.4.1
+=======
+Flask==2.0.2
+Flask_SocketIO==5.1.1
+numpy==1.21.4
+opencv_python==4.5.4.60
+Pillow==9.1.0
+tensorflow==2.7.0
+Werkzeug==2.0.2
+eventlet
+>>>>>>> 0722c816 (second commit)
