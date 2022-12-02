@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>EMOVIZ</title>
+    <title>Emotion Recogniton App</title>
     <link rel="stylesheet" href="{{url_for('static',filename='display.css')}}" />
     <link rel="icon" href="{{url_for('static',filename='eye.png')}}" type="image/png" />
 
@@ -28,7 +28,7 @@
         <img class="img_logo" src="{{url_for('static',filename='eye.png')}}" alt="" srcset="">
         <span class="content_nav">
 
-          EMOVIZ
+          Emotion Recogniton App
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -54,7 +54,7 @@
             <div class="card" style="width: 19rem;">
               <img src="{{url_for('static',filename='RT.svg')}}"  alt="..." style="width: 100%; height: 15vw; object-fit: cover;">
               <div class="card-body">
-                <h5 class="card-title">Real-Time FED</h5>
+                <h5 class="card-title">Real-Time FER</h5>
                 <p class="card-text" style="text-align:justify">It will ask for access to webcam. After giving the permission, emotion will be detected. There will be latency due to the socketio implementation.</p>
                 <a href="{{url_for( 'webcam')}} " class="btn btn-primary btn_animation">Live Emotion</a>
               </div>
@@ -64,9 +64,9 @@
             <div class="card" style="width: 19rem;">
               <img src="{{url_for('static',filename='IU.svg')}}" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">FED on Image</h5>
-                <p class="card-text" style="text-align:justify">Facial Emotion Detection is performed on the image and the image with bounding boxes will be displayed which can be downloaded.</p>
-                <a href="{{url_for( 'picdetect')}} " class="btn btn-primary">Upload Pic</a>
+                <h5 class="card-title">FER on Image</h5>
+                <p class="card-text" style="text-align:justify">Facial Emotion Recognition is performed on the image and the image with bounding boxes will be displayed which can be downloaded.</p>
+                <a id = "photo" href="{{url_for( 'picdetect')}} " class="btn btn-primary">Upload Pic</a>
               </div>
             </div>
           </div>
@@ -74,9 +74,9 @@
             <div class="card" style="width: 19rem;">
               <img src="{{url_for('static',filename='VU.svg')}}" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">FED on Video</h5>
-                <p class="card-text" style="text-align:justify">Facial Emotion Detection is performed on the frames of the video and is saved in mp4 format and is displayed which can be downloaded.</p>
-                <a href="{{url_for( 'video')}} " class="btn btn-primary">Upload Video</a>
+                <h5 class="card-title">FER on Video</h5>
+                <p class="card-text" style="text-align:justify">Facial Emotion Recognition is performed on the frames of the video and is saved in mp4 format and is displayed which can be downloaded.</p>
+                <a id="video" href="{{url_for( 'video')}} " class="btn btn-primary">Upload Video</a>
               </div>
             </div>
           </div>
@@ -88,7 +88,7 @@
     <div style="font-weight: bolder;" class="footer_">
       <center>
 
-        <footer class="footer_content">Want to create models like this? Check my <a href= "https://github.com/PrudhvirajuChekuri"><img src="../static/github.png"></a>.
+        <footer class="footer_content">Created by Group 6. You can check out from our github <a href= "https://github.com/TanviNarkhedeNU/Capstone-2/tree/EmotionRecognition-Website"><img src="../static/github.png"></a>.
         </footer>
       </center>
     </div>
