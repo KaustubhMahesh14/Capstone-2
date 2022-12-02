@@ -8,7 +8,7 @@ pipeline {
     }
     stages("test"){
       steps{
-        sh 'python test.py'
+        sh 'python app.py'
       }
     }
     stages("deploy"){
